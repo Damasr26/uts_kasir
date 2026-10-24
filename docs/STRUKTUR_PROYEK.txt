@@ -1,0 +1,35 @@
+JOSJISMART_Tanpa_Login/
+|-- pom.xml                  Konfigurasi Maven, JDK 21 & runnable JAR
+|-- nbactions.xml            Perintah NetBeans
+|-- config.properties        Koneksi MySQL XAMPP
+|-- README.md                Panduan instalasi & pemakaian
+|-- run-windows.bat          Jalankan JAR atau bangun via Maven
+|-- database/
+|   `-- schema.sql           SQL import manual opsional
+|-- docs/
+|   |-- STRUKTUR_PROYEK.txt
+|   `-- VERIFIKASI.txt
+`-- src/main/java/id/josjismart/
+    |-- App.java             Aplikasi langsung membuka dashboard
+    |-- config/
+    |   `-- AppConfig.java
+    |-- db/
+    |   `-- Database.java    Inisialisasi MySQL & produk demo
+    |-- model/
+    |   |-- Product.java
+    |   |-- CartLine.java
+    |   |-- Sale.java
+    |   `-- SaleItem.java
+    |-- repo/
+    |   |-- StoreRepository.java   CRUD barang & pengaturan kasir
+    |   `-- SaleRepository.java    Checkout atomik & laporan
+    `-- ui/
+        |-- Skin.java            Tampilan skeuomorphism
+        |-- MainFrame.java       Dashboard langsung & navigasi
+        |-- DashboardPanel.java  Ringkasan KPI
+        |-- RevenueChart.java    Grafik custom Java2D
+        |-- ProductPanel.java    CRUD / pencarian produk
+        |-- PosPanel.java        POS, keranjang, pembayaran
+        |-- Receipt.java         Struk & printing
+        |-- ReportPanel.java     Riwayat / analisis / CSV
+        `-- SettingsPanel.java   Pengaturan nama kasir, tanpa login

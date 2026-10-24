@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+    <action>
+        <actionName>run</actionName>
+        <goals>
+            <goal>process-classes</goal>
+            <goal>org.codehaus.mojo:exec-maven-plugin:3.6.2:java</goal>
+        </goals>
+        <properties>
+            <exec.mainClass>id.josjismart.App</exec.mainClass>
+            <exec.workingdir>${basedir}</exec.workingdir>
+        </properties>
+    </action>
+</actions>

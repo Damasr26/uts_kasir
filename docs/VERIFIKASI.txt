@@ -1,0 +1,14 @@
+PENGUJIAN PROYEK JOSJISMART TANPA LOGIN
+====================================
+- 18 berkas sumber Java berhasil dikompilasi dengan javac --release 21.
+- Main class adalah id.josjismart.App dan langsung membuka MainFrame.
+- Tidak terdapat lagi LoginFrame / autentikasi, dan pengaturan akun diganti dengan nama kasir.
+- Uji sederhana keranjang dan struk dengan nama pembeli & kasir: LULUS.
+- Transaksi menyimpan snapshot nama, SKU, kategori, satuan, harga, dan nama kasir.
+- Database yang sudah pernah dipakai tetap didukung; tabel users lama diabaikan.
+
+PERLU DIVERIFIKASI DI KOMPUTER PENGGUNA
+=====================================
+- XAMPP MySQL yang benar-benar berjalan dan koneksi ke konfigurasi lokal.
+- Maven melalui NetBeans (mengunduh dependensi MariaDB Connector/J).
+- Alur transaksi lengkap dengan database sungguhan, cetak struk dan ekspor CSV.
